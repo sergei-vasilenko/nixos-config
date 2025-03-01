@@ -5,6 +5,7 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "audio" "video" "bluetooth" ];
     initialPassword = "7";
+    shell = pkgs.zsh;
   };
 
   # Автоматический вход в GNOME

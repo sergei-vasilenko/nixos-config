@@ -2,6 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
+    networkmanager
+  
     google-chrome
     firefox
 
@@ -14,6 +16,7 @@
     audacious
     fragments
     syncthing
+    libreoffice-still
     ffmpeg
     aria2
     wget
@@ -22,28 +25,37 @@
     evince # Просмотр PDF
     vlc # Просмотр видео
     flameshot # Для скриншотов
-    simple-screen-recorder # Запись видео с экрана
-    alacritty # Терминал
+    nautilus
+    gparted
 
     # Разработка
     git
-    neovim
+    gedit
     code-cursor
     postgresql
-    nodejs-16_x
-    nodejs-18_x
+    pgadmin4-desktopmode
+    asdf-vm
     rustc
     cargo
     go
+    nodejs
 
     # Дополнительные утилиты
+    terminator
+    zsh
     htop
     ncdu
     rsync
-    fdisk
+    yt-dlp
     lm_sensors # Мониторинг температуры
     gnome.gnome-disk-utility # Управление дисками
     gnome.gnome-system-monitor # Мониторинг системы
+    ngrok
+
+    # arch
+    unzip
+    zip
+    gzip
   ];
 
   # Кодеки

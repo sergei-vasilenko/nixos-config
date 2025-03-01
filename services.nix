@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  # Сеть
-  networking.networkmanager.enable = true;
-
   # Bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
